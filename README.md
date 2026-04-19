@@ -37,7 +37,7 @@ bullying-withdrawal-analysis/
 │   ├── tables/
 │   ├── figures/
 │   └── logs/
-├── src/
+├── SRC/
 │   └── run_observed_variable_analysis.py
 ├── README.md
 ├── requirements.txt
