@@ -1,0 +1,88 @@
+OBSERVED-VARIABLE LONGITUDINAL PATH ANALYSIS SUMMARY
+================================================================================
+
+Withdrawal model:
+           Model                Term         B       SE         t            p
+Withdrawal model               const  1.997122 0.293087  6.814088 2.798941e-11
+Withdrawal model offline_bullying_T1  0.215060 0.051798  4.151916 3.890134e-05
+Withdrawal model    cyberbullying_T1  0.384696 0.063593  6.049384 2.893010e-09
+Withdrawal model   family_support_T1 -0.084693 0.028127 -3.011104 2.737662e-03
+Withdrawal model    offline_x_family -0.094526 0.032569 -2.902309 3.871451e-03
+Withdrawal model      cyber_x_family -0.061462 0.030722 -2.000620 4.598575e-02
+Withdrawal model                 age -0.012703 0.010214 -1.243718 2.141993e-01
+Withdrawal model              gender -0.005372 0.048728 -0.110247 9.122590e-01
+Withdrawal model          parent_edu  0.016236 0.055498  0.292560 7.699824e-01
+Withdrawal model          low_income -0.039818 0.059522 -0.668969 5.038310e-01
+Withdrawal model      recruit_source  0.003413 0.055668  0.061312 9.511359e-01
+
+
+Depression model:
+           Model                Term         B       SE         t            p
+Depression model               const -2.762308 1.213584 -2.276157 2.326722e-02
+Depression model       withdrawal_T2  1.894408 0.239258  7.917860 1.629942e-14
+Depression model offline_bullying_T1  0.333279 0.274074  1.216021 2.245623e-01
+Depression model    cyberbullying_T1 -0.327724 0.343012 -0.955430 3.398312e-01
+Depression model       depression_T1  0.901449 0.046280 19.478163 5.307859e-63
+Depression model                 age -0.027600 0.053855 -0.512483 6.085441e-01
+Depression model              gender  0.035922 0.256532  0.140031 8.886932e-01
+Depression model          parent_edu -0.470206 0.291250 -1.614442 1.070752e-01
+Depression model          low_income -0.354684 0.313740 -1.130503 2.588172e-01
+Depression model      recruit_source -0.221942 0.293417 -0.756405 4.497697e-01
+
+
+Anxiety model:
+        Model                Term         B       SE         t            p
+Anxiety model               const -2.921695 1.166172 -2.505371 1.255563e-02
+Anxiety model       withdrawal_T2  1.605653 0.228014  7.041907 6.446574e-12
+Anxiety model offline_bullying_T1  0.283120 0.262789  1.077367 2.818466e-01
+Anxiety model    cyberbullying_T1  0.497890 0.328889  1.513857 1.307068e-01
+Anxiety model          anxiety_T1  0.869427 0.045043 19.302299 3.673709e-62
+Anxiety model                 age -0.061442 0.051571 -1.191407 2.340706e-01
+Anxiety model              gender -0.033007 0.245838 -0.134263 8.932495e-01
+Anxiety model          parent_edu -0.225243 0.279520 -0.805818 4.207384e-01
+Anxiety model          low_income -0.255925 0.300980 -0.850308 3.955692e-01
+Anxiety model      recruit_source  0.066757 0.282722  0.236121 8.134375e-01
+
+
+Stress model:
+       Model                Term         B       SE         t            p
+Stress model               const -7.845139 1.794798 -4.371043 1.510786e-05
+Stress model       withdrawal_T2  2.595088 0.339208  7.650438 1.070369e-13
+Stress model offline_bullying_T1  0.594543 0.397797  1.494590 1.356652e-01
+Stress model    cyberbullying_T1 -0.590205 0.494295 -1.194034 2.330423e-01
+Stress model           stress_T1  0.981722 0.044624 21.999850 4.068251e-75
+Stress model                 age  0.118249 0.077488  1.526028 1.276482e-01
+Stress model              gender -0.520652 0.370118 -1.406719 1.601446e-01
+Stress model          parent_edu -0.207946 0.420067 -0.495030 6.208011e-01
+Stress model          low_income  0.074691 0.452527  0.165052 8.689709e-01
+Stress model      recruit_source -0.033664 0.423236 -0.079540 9.366359e-01
+
+
+Bootstrap indirect effects:
+                                      Effect  Boot_N     Mean       SE   CI_low  CI_high  p_two_tailed_approx
+Offline bullying -> Withdrawal -> Depression    2000 0.406847 0.111874 0.204034 0.637744                  0.0
+   Offline bullying -> Withdrawal -> Anxiety    2000 0.345089 0.102111 0.165530 0.555472                  0.0
+    Offline bullying -> Withdrawal -> Stress    2000 0.559198 0.158685 0.270609 0.892659                  0.0
+   Cyberbullying -> Withdrawal -> Depression    2000 0.721419 0.161093 0.433444 1.048048                  0.0
+      Cyberbullying -> Withdrawal -> Anxiety    2000 0.609462 0.143971 0.355426 0.908350                  0.0
+       Cyberbullying -> Withdrawal -> Stress    2000 0.988966 0.222091 0.597022 1.453949                  0.0
+              Offline bullying -> Withdrawal    2000 0.215336 0.051913 0.114003 0.317529                  0.0
+                 Cyberbullying -> Withdrawal    2000 0.381541 0.068067 0.246988 0.517452                  0.0
+
+
+Wald-style test:
+                      Contrast  Diff_mean  Diff_SE  Wald_chi2_1df  p_value    CI_low  CI_high
+Cyber vs Offline on Withdrawal   0.169637 0.098112       2.989486 0.083807 -0.022663 0.361936
+
+
+VIF diagnostics:
+           Variable      VIF
+                age 1.013177
+             gender 1.009305
+         parent_edu 1.009788
+         low_income 1.013090
+     recruit_source 1.005239
+offline_bullying_T1 1.435805
+   cyberbullying_T1 1.494346
+  family_support_T1 1.175528
+      withdrawal_T2 1.328285
