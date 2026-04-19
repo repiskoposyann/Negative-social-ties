@@ -33,7 +33,7 @@ The reason is straightforward: the available dataset is a **summary-level datase
 bullying-withdrawal-analysis/
 ├── data/
 │   └── longitudinal_bullying_withdrawal_data.csv
-├── output/
+├── output.data/
 │   ├── tables/
 │   ├── figures/
 │   └── logs/
