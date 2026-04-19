@@ -41,8 +41,7 @@ bullying-withdrawal-analysis/
 │   └── run_observed_variable_analysis.py
 ├── README.md
 ├── requirements.txt
-├── .gitignore
-└── LICENSE
+
 ```
 
 ## Dataset structure
